@@ -1,0 +1,28 @@
+{  
+	"settings":{
+		"number_of_shards":3,
+		"number_of_replicas":1
+	},
+	
+    "mappings": {
+		"man": {
+			 "properties":  {
+			 	"name": {
+			 		"type": "text"
+			 	},
+			 	"country": {
+			 		"type": "keyword"
+			 	},
+			 	"age": {
+			 	  "type": "integer"	
+			 	},
+			 	"data": {
+			 	"type": "date",
+			 	"format": "yyyy-MM-dd HH:mm:ss||epoch_millis"
+			 	}
+		   }
+		},
+		"woman":{
+		}
+	}
+}
